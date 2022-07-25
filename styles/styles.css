@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap");
+nav ul {
+  display: flex;
+}
+
+h2 {
+  font-family: "Poppins";
+}
+
+p, body {
+  font-family: "Roboto";
+}/*# sourceMappingURL=styles.css.map */

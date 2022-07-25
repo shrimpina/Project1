@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .container {
+    width: 71.7%;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  nav {
+    background-color: #1D315F;
+    padding: 100px;
+    color: white;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  /* HOME PAGE CONTENT*/
+ 
+
+  .homehero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+  }
+
+  .homerow1 {
+    border: 3px solid blue;
+    height: 300px;
+  }
+
+  .homerow2 {
+    background-color: #E4F4F9;
+    height: 300px;
+  }
+
+  .homerow3 {
+    background-color: #EFDBD6;
+    height: 300px;
+}
+
+.homerow4 {
+    background-color: #FAE0AC;
+    height: 300px;
+}
+
+.homerow5 {
+    background-color: #EDB39E;
+    height: 300px;
+}
+
+.homerow6 {
+    background-color: #FAE0AC;
+    height: 300px;
+}
+
+.homerow7 {
+    background-color: #E4F4F9;
+    height: 300px;
+}
+
+.homerow8 {
+    border: 3px solid rgb(37, 182, 24);
+    height: 300px;
+}
+
+
+/* DESIGN PAGE CONTENT*/
+
+
+.designhero {
+
+}
+
+.designrow1 {
+    height: 300px;
+}
+
+.designrow2 {
+    background-color: #EFDBD6;
+    height: 300px;
+}
+
+.designrow3 {
+    background-color: #EFDBD6;
+    height: 300px;
+}
+
+
+.designrow4 {
+    background-color: #EDB39E;
+    height: 300px;
+}
+
+
+.designrow5 {
+    border: 12px solid #71C5DC;
+    border-radius:20px;
+    height: 300px;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #1D315F;
+    padding: 100px;
+}
+
+
+
