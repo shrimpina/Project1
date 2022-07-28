@@ -1,12 +1,834 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap");
-nav ul {
-  display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #1B1B1B;
+  font-weight: 400;
+  font-size: 1rem;
+  position: relative;
+  text-align: left;
+  line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Poppins";
+  color: #1D315F;
+  margin-bottom: 3.2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
 h2 {
-  font-family: "Poppins";
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 3rem;
 }
 
-p, body {
-  font-family: "Roboto";
-}/*# sourceMappingURL=styles.css.map */
+h3 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+  line-height: 1.9rem;
+}
+
+p {
+  margin-bottom: 1.1rem;
+}
+
+
+.container {
+  background-color: #E4F4F9;
+  width: 62%;
+  margin: 0 auto;
+  padding: 3%;
+  margin-bottom: 4.2rem;
+  margin-top:4.2rem;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.marginright {
+  margin-right: 4rem;
+}
+
+.marginleft {
+  margin-left: 4rem;
+}
+
+
+
+
+/*NAV*/
+
+
+
+
+nav {
+  width: 100%;
+  background-color: #1D315F;
+  padding: 25px;
+  color: white;
+}
+
+nav ul {
+  margin-left: 55%;
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav ul li:after {
+  content: " | ";
+  margin: 0 1.5em;
+ }
+
+nav ul li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+
+/* HOME PAGE & ACQUISITIONS PAGE*/
+
+
+
+
+.homehero {
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 37.5rem 8.25rem 5.5rem;
+  text-align:left;
+}
+
+.homehero h1 {
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.homehero .button1 {
+  margin: 0;
+}
+
+.home_intro {
+  width: 65%;
+  margin: 0 auto;
+  padding: 6rem;
+}
+
+.highlights {
+  background-color: #E4F4F9;
+  padding: 4rem 8rem;
+  margin-bottom: 9.188rem;
+}
+
+.highlights .flex {
+  padding: 1.5rem;
+}
+
+.highlight_text {
+  width: 55%;
+}
+
+.highlight_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  background-color: #FAE0AC;
+  border-radius: 22px;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color:#1D315F;
+}
+
+a:hover {
+  color:#0D9DDA;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+/* List Styles*/
+
+
+
+.names ul, .title ul, ul li a {
+  list-style: none;
+  line-height: 30pt;
+}
+
+.names {
+  width: 20%;
+}
+
+.names ul li, .title ul li {
+  font-size:1.2rem;
+  color: #1B1B1B;
+}
+
+.right ul li, .left ul li, .designrow4 .col-4 ul li {
+  font-size: 1.3rem;
+  color:#1D315F;
+  line-height: 3rem;
+}
+
+.title {
+  width: 70%;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #1B1B1B;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.container ul li a:hover {
+  color: #0D9DDA;                    
+}
+
+.col-3 {
+  width: 40%;
+}
+
+.col-4 {
+  width: 60%;
+}
+
+
+
+
+/*DOWNLOAD BANNER*/
+
+
+
+
+.download {
+  text-align: center;
+  align-items: center;
+  padding: 4rem 6rem;
+  margin: 0 auto;
+  width: 62%;              
+  background-color: #A63E26;               
+  border-radius:25px;
+  margin-bottom: 9.188rem;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.download h2 {
+  color: white;
+  padding: 35px;
+}
+
+.button1 {
+  margin-left: 25%;
+  font-size: 1.2rem;
+  font-weight:700;
+  color: white;
+  background-color:transparent;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  border: 3px solid white;
+  padding: 2px 2px;
+}
+
+.button1:hover {
+  background-color: white;
+  transition: all 0.5s;
+  color:#1D315F;
+  cursor: pointer; 
+}
+
+
+
+
+/*FOOTER*/
+
+
+
+
+footer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #1D315F;
+  padding: 1.8rem 0;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+footer .flex {
+  margin: 0 auto;
+  width: 10%;
+  justify-content: center;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/* DESIGN SYSTEM PAGE */
+
+
+.container2 {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.container2 .container {
+  width: 40%;
+}
+.left, .right {
+  padding: 2rem;
+}
+
+.designrow4 .flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.designrow4 .col-3, .designrow4 .col-4 {
+  width: 42%;
+}
+
+.col-4 ul {
+  margin-top: 5rem;
+}
+
+.right .flex {
+  margin-top: 3rem;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: wrap;
+  justify-content: space-between;
+}
+
+.designrow5 {
+  background-color: transparent;
+  border: 12px solid #71C5DC;
+  border-radius:20px;
+}
+
+.designhero {
+  background-image: url(../images/designhero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 175px;
+}
+
+.outsidecolors, .insidecolors {
+  width: 30%
+}
+
+.insidecolors {
+  padding-top: 5rem;
+}
+
+.color1, .color2, .color3, .color4, .color5 {
+  width: 300px;
+  height: 150px;
+}
+
+.color1 {
+  background-color:#0D9DDA ;
+}
+.color2 {
+  background-color:#F3AF24 ;
+}
+.color3 {
+  background-color:#1D315F ;
+}
+.color4 {
+  background-color:#71C5DC ;
+}
+.color5 {
+  background-color:#A63E26 ;
+}
+
+#topbutton {
+  bottom: 20px; 
+  right: 30px;
+  display: none; 
+  background-color: #0D9DDA;
+  color: white; 
+  position: fixed; 
+  border: none; 
+  padding: 8px; 
+  border-radius: 8px; 
+  font-size: 1.2rem; 
+  cursor: pointer; 
+}
+
+#topbutton:hover {
+  background-color: #1D315F; 
+}
+
+.button2 {
+  margin-left: 15%;
+  font-size: 1.2rem;
+  font-weight:500;
+  color:#1D315F;
+  background-color:transparent;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  border: 3px solid #0D9DDA;
+  padding: 2px 2px;
+}
+
+.button2:hover {
+  border: none;
+  background-color:#0D9DDA;
+  transition: all 0.5s;
+  color:white;
+  cursor: pointer; 
+}
+
+.button3 {
+  margin-left: 15%;
+  font-size: 1.2rem;
+  font-weight:500;
+  color:#1D315F;
+  background-color:transparent;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  border: 3px solid #1D315F;
+  padding: 2px 2px;
+}
+
+.button3:hover {
+  border: none;
+  background-color:#1D315F;
+  transition: all 0.5s;
+  color:white;
+  cursor: pointer; 
+}
+
+.hoverex1 {
+  margin-left: 15%;
+  background-color:#0D9DDA;
+  border: none;
+  font-size: 1.2rem;
+  font-weight:700;
+  color: white;
+  width: 250px;
+  height: 60px;
+  padding: 2px 2px;
+}
+
+.hoverex2 {
+  margin-left: 15%;
+  background-color: #1D315F;
+  border: none;
+  font-size: 1.2rem;
+  font-weight:700;
+  color: white;
+  width: 200px;
+  height: 60px;
+  padding: 2px 2px;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+
+#input {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 23.68rem;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.designrow5 .col-4 .container{
+  width: 90%;
+  margin-left: 0;
+  padding: 2rem;
+}
+
+
+
+
+
+/*Hamburger Menu*/
+
+
+
+
+
+#burgertoggle {
+  opacity: 0;
+}
+
+#burgertoggle:checked + .burger__btn > span {
+  transform: rotate(45deg);
+}
+
+#burgertoggle:checked + .burger__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#burgertoggle:checked + .burger__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#burgertoggle:checked ~ .burgerbox {
+  left: 0 !important;
+}
+
+.burger__btn {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 1.625rem;
+  height: 1.625rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.burger__btn > span::before {
+  content: '';
+  top: -0.5rem;
+}
+
+.burger__btn > span::after {
+  content: '';
+  top: 0.5rem;
+}
+
+.burger__btn > span,
+.burger__btn > span::before,
+.burger__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #0D9DDA;
+  transition-duration: .25s;
+}
+
+.burgerbox {
+  display: block;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 35%;
+  width: 17.5rem;
+  padding: 5rem 0;
+  list-style: none;
+  background-color: #0D9DDA;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, .5);
+  transition-duration: .25s;
+}
+.burgeritem {
+  display: block;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  color: #191919;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+.burgeritem:hover {
+  background-color: #1D315F;
+  color:white;
+}
+
+
+
+
+/*Media Queries*/
+
+
+
+
+
+
+@media (min-width: 960px) and (max-width: 1199px) /* for laptops */{
+  .hamburger-menu {
+      display:none;
+  }
+  nav ul {
+    display: flex;
+  }
+  .img_mobile {
+    display:none;
+  }
+  .img_desktop {
+    display:block;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+    line-height: 3rem;
+  }
+  .color1, .color2, .color3, .color4, .color5 {
+    width: 125px;
+    height: 75px;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1920px) /* for large devices */{
+  .hamburger-menu {
+      display:none;
+  }
+  nav ul {
+    display: flex;
+  }
+  .img_mobile {
+    display:none;
+  }
+  .img_desktop {
+    display:block;
+  }
+  h1 {
+    font-size: 3.1rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .color1, .color2, .color3, .color4, .color5 {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 767px) and (orientation : portrait) /* for mobile */{
+  nav ul {
+      display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .container {
+    width: 75%;
+    padding: 1rem;
+  }
+
+  .block {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  h5 {
+    font-size: 0.98rem;
+  }
+
+  .designhero, .homehero {
+    padding: 2rem;
+  }
+
+  .highlights .flex {
+    display: block;
+    margin: 0;
+  }
+  .highlight_text, .highlight_title {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+
+  }
+  .img_mobile {
+    display:block;
+  }
+  .img_desktop {
+    display:none;
+  }
+  .names ul li {
+    font-size:0.7rem;
+    padding-right: 0.5rem;
+  }
+
+  .title ul li {
+    font-size: 0.7rem;
+  }
+  .names, .title {
+    width: 50%;
+    display: flex;
+  }
+
+  .container ul li a {
+    font-size: 0.9rem;
+  }
+
+  .download {
+    display: block;
+    padding: 1rem;
+  }
+
+  .button1 {
+    width: 170px;
+    margin-left: 0px;
+  }
+  .home_intro {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .container2 .container {
+    width: 90%;
+  }
+
+  .right .flex {
+    width: 100%;
+    flex-direction:wrap;
+    flex-wrap: wrap;
+    }
+
+    .col-3, .col-4 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #input {
+      width: 18rem;
+    }
+    .color1, .color2, .color3, .color4, .color5 {
+      width: 75px;
+      height: 75px;
+    }
+    
+}
+
+
+
+  @media (min-width:768px) and (max-width: 959px) and (orientation : portrait) /* for tablets */{
+    nav ul {
+        display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    .img_mobile {
+      display:block;
+    }
+    .img_desktop {
+      display:none;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      line-height: 2rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.9rem;
+      text-align: center;
+      line-height: 4rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    h5 {
+      font-size: 1.2rem;
+    }
+    .color1, .color2, .color3, .color4, .color5 {
+      width: 70%;
+      height: 75px;
+    }
+
+  }
+
+  
+  
+
+
+
+
+
+

@@ -4,13 +4,39 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Salesforce Annual Report 2022</title>
-     <link href="styles/style.css" rel="stylesheet" type="text/css">
+     <link href="styles/styles.css" rel="stylesheet" type="text/css">
    </head>
    <body>
-    <h1>Hi</h1>
-
+    <header>
+        <nav class="flex">
+            <a href="https://www.salesforce.com"target="_blank"><img src="images/logo.png" alt="salesforce logo"></a>
+            <ul>
+                <li>
+                    <a href="index.html" class="selected">Home</a>
+                </li>
+                <li>
+                    <a href="acquistion.html" class="selected">Acquisitions & Mergers</a>
+                </li>
+                <li>
+                    <a href="design.html" class="selected">Design System</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <input id="burgertoggle" type="checkbox" />
+            <label class="burger__btn" for="burgertoggle">
+              <span></span>
+            </label>
+          
+            <ul class="burgerbox">
+              <li><a class="burgeritem" href="index.html">Home</a></li>
+              <li><a class="burgeritem" href="acquistion.html">Acquistions & Mergers</a></li>
+              <li><a class="burgeritem" href="design.html">Design System</a></li>
+            </ul>
+            </div>
+    </header>
     <div class="container">
-        <h2>Our Recent Acquisitions and Mergers</h2>
+        <h1>Our Recent Acquisitions and Mergers</h1>
         <p>We evaluate opportunities to acquire or invest in complementary businesses, services, technologies and intellectual property to complement our organic innovation and advance the development of our Customer 360 Platform. Acquisitions can range in size and complexity, from those that enhance or complement existing products and accelerate development of features to large-scale acquisitions that result in new service offerings. This process resulted in our acquisition of several companies in recent years, notably our acquisition of Slack in fiscal 2022. </p>
 
             <p>We also manage a portfolio of strategic investments in both privately held and publicly traded companies focused primarily on enterprise cloud companies, technology startups and system integrators. Our investments range from early to late stage companies, including investments made concurrent with a company’s initial public offering. We invest in companies that we believe are digitally transforming their industries, improving customer experiences, helping us expand our solution ecosystem or supporting other corporate initiatives. We plan to continue making these types of strategic investments as opportunities arise that we find attractive, including investments in companies representing targeted geographies, businesses and technological initiatives. Our strategy includes growing our strategic investment portfolio, in part, by reinvesting proceeds from the sales of strategic investments.
@@ -18,12 +44,56 @@
     </div>
     <div class="container">
         <h2>Slack</h2>
-        <p>In July 2021, we acquired Slack, a system of engagement that digitally connects employees, customers, partners and systems with every application and every workflow. Slack enables organizations to build a digital headquarters and work more efficiently by supporting the way people naturally work together, in real-time or asynchronously, in-person or remote and structured or informal. We plan to integrate Slack with most Salesforce offerings. </p>
-        <p>Slack is now integrated across Customer 360, as companies across the world build a digital HQ for this next generation of work. With our acquisition of Slack Technologies, Inc. (“Slack”) in July 2021, we are also creating a new digital headquarters where companies, employees, governments, and stakeholders can create success from anywhere.
-        </p>
+        <div class="flex block">
+            <div class="col-3 center">
+                <img src="images/Slack_desktop.png" class="img_desktop" alt="slack logo">
+                <img src="images/Slack_mobile.png" class="img_mobile" alt="slack logo">
+            </div>
+            <div class="col-4">
+                <p>In July 2021, we acquired Slack, a system of engagement that digitally connects employees, customers, partners and systems with every application and every workflow. Slack enables organizations to build a digital headquarters and work more efficiently by supporting the way people naturally work together, in real-time or asynchronously, in-person or remote and structured or informal. We plan to integrate Slack with most Salesforce offerings. </p>
+                <p>Slack is now integrated across Customer 360, as companies across the world build a digital HQ for this next generation of work. With our acquisition of Slack Technologies, Inc. (“Slack”) in July 2021, we are also creating a new digital headquarters where companies, employees, governments, and stakeholders can create success from anywhere.
+                </p>
+            </div>
+        </div>
     </div>
     <div class="container">
         <h2>Tableau & Microsoft</h2>
-        <p>Our Analytics offering, including Tableau, provides customers an advanced, end-to-end analytics solution serving a broad range of enterprise use cases. Analytics offers customers intelligent analytics capabilities to better understand their business data. By providing self-service data preparation and analytical technology to customers, Analytics is designed to improve our customers’ decision-making and allow customers to take action from any device. Integration. Our Integration offering, powered by MuleSoft, makes it easy to connect data from any system to deliver truly connected experiences. MuleSoft helps our customers unlock, unify and secure their data, use discoverable, reusable APIs and integrations and increase their speed and agility to quickly create connected experiences. MuleSoft allows our customers to unlock data across their enterprise, which can create new revenue opportunities, increase operational efficiency and create differentiated customer experiences.</p>
+        <div class="flex reverse block">
+            <div class="col-3 center">
+                <img src="images/mulesoft_desktop.png" class="img_desktop" alt="mulesoft logo">
+                <img src="images/mulesoft_mobile.png" class="img_mobile" alt="mulesoft logo">
+                <img src="images/tableau_desktop.png" class="img_desktop" alt="tableau logo">
+                <img src="images/tableau_mobile.png" class="img_mobile" alt="tableau logo">
+            </div>
+            <div class="col-4 marginright">
+                <p>Our Analytics offering, including Tableau, provides customers an advanced, end-to-end analytics solution serving a broad range of enterprise use cases. Analytics offers customers intelligent analytics capabilities to better understand their business data. By providing self-service data preparation and analytical technology to customers, Analytics is designed to improve our customers’ decision-making and allow customers to take action from any device. Integration. Our Integration offering, powered by MuleSoft, makes it easy to connect data from any system to deliver truly connected experiences. MuleSoft helps our customers unlock, unify and secure their data, use discoverable, reusable APIs and integrations and increase their speed and agility to quickly create connected experiences. MuleSoft allows our customers to unlock data across their enterprise, which can create new revenue opportunities, increase operational efficiency and create differentiated customer experiences.</p>
+            </div>
+        </div>
     </div>
-    </body>
+    <button onclick="topFunction()" id="topbutton" title="Go to top"><img src="images/Arrow 1.png" alt="arrowup"></button>
+    <script>
+        var mybutton = document.getElementById("topbutton");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <footer>
+        <img src="images/logo.png" alt="salesforce logo" width="auto" height="60px">
+        <a href="https://www.salesforce.com/" target="_blank">www.salesforce.com</a>
+        <div class="flex">
+          <a href="https://www.facebook.com/salesforce/"target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+          <a href="https://www.instagram.com/salesforce/?hl=en"target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+          <a href="https://twitter.com/salesforce?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank"><img src="images/twitter-sign.png" alt="twitter logo"></a>
+        </div>
+    </footer>
+</body>
+</html>
